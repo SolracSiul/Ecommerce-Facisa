@@ -1,0 +1,40 @@
+{
+  "usuarios": [
+    {
+      "nome": "usuario_novo",
+      "login": "usuario_novo",
+      "senha": "usuario_novo",
+      "perfil": "FUNC",
+      "id": 1
+    },
+    {
+      "nome": "Sorak",
+      "login": "sorak",
+      "senha": "sorak123",
+      "perfil": "FUNC",
+      "id": 2
+    },
+    {
+      "nome": "abacate",
+      "login": "abacate",
+      "senha": "abacateSenha",
+      "perfil": "FUNC",
+      "id": 3
+    }
+  ],
+
+  "produtos":[
+    {
+      "id_produto" : 1,
+      "nome_produto" : "abacate",
+      "estoque" : 10,
+      "preco": 2.00
+    },
+    {
+      "id_produto": 2,
+      "nome_produto": "tomate",
+      "estoque" : 10,
+      "preco": 4.00
+    }
+]
+}

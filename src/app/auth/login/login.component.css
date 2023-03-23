@@ -1,0 +1,24 @@
+.btns-lgn-page{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding-top: 15px;
+    justify-content: space-between;
+}
+.btns-lgn-page > button, a{
+    background: linear-gradient(45deg, rgb(10, 175, 10), rgb(1, 97, 1));
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90px;
+    color: white;
+}
+.btns-lgn-page > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.btns-lgn-page > a:last-child{
+    width: 130px;
+}

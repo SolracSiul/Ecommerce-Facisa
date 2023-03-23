@@ -1,0 +1,8 @@
+<p>Aqui a mágica irá ser listado os produtos</p>
+<div *ngIf="usuarioLogado">
+<div *ngIf="usuarioLogado.perfil==='ADMIN'">
+    <a [routerLink]="['/produtos/novo']" href="#"
+    title="Novo" alt="Novo"
+    class="btn btn-xs btn-success">Novo</a>
+</div>
+</div>

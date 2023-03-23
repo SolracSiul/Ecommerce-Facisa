@@ -1,0 +1,21 @@
+.btns-lgn-page{
+    background: linear-gradient(45deg, rgb(10, 175, 10), rgb(1, 97, 1));
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 110px;
+    color: white;
+    cursor: pointer;
+}
+.btns-inserir{
+    width: 300px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.btns-lgn-page > a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,33 @@
+<p>Essa é o componente Lsitar Pessoas! Seja bem vindo</p>
+<h1>Listar Pessoas component: </h1>
+
+<table class="table table-striped table-bordered table-hover">
+    <tbody>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Data de Nascimento</th>
+            <th class="text-center">
+                <a href="#" title="Novo" alt="Novo" [routerLink]="['/pessoas/novo']">
+                    <fa-icon [icon]="faPlus"></fa-icon> Novo
+                </a>
+            </th>
+        </tr>
+        <tr *ngFor="let pessoa of pessoas">
+            <td>{{pessoa.nome}}</td>
+            <td>{{pessoa.idade}}</td>
+            <th>{{pessoa.dataNascimento}}</th>
+            <td class="text-center" style="width: 300px">
+                <a href="#" [routerLink]="['/pessoas/editar', pessoa.id]" title="Editar" alt="Editar" class="btn btn-xs btn-info">
+                    <fa-icon [icon]="faedit"></fa-icon> Editar</a>
+                <a href="#"title="Remover" alt="Remover" (click)="remover($event, pessoa)" class="btn btn-xs btn-danger">
+                    <fa-icon [icon]="faTimes"></fa-icon> Remover
+                </a>
+                <button type="button" class="btn btn-xs btn-info" (click)="abrirModalPessoa(pessoa)" >
+                        <i class="fa fa-eye" aria-hidden="true"></i> Ver
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p *ngIf="pessoas.length==0">Nenhuma pessoa cadastgrada</p>
