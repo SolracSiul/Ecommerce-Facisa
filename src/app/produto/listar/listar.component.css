@@ -1,0 +1,69 @@
+.teste{
+    background: linear-gradient(180deg, #8ACB72 0%, #306857 100%);
+}
+.container{
+    margin-top: 30px;
+    height: 100vh;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.card{
+  width: 300px;
+  height: 320px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: rgba(227, 255, 210);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(227, 255, 210);
+}
+  
+.card-infos > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+  
+.card-infos > div > span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+  
+.card-infos button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.card-infos a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.card-infos a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.title{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}

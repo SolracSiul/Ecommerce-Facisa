@@ -27,20 +27,50 @@
       "senha": "hiandra123",
       "perfil": "FUNC",
       "id": 4
+    },
+    {
+      "nome": "teste",
+      "login": "pessoa_teste",
+      "senha": "pessoa_teste",
+      "perfil": "FUNC",
+      "id": 5
     }
   ],
   "produtos": [
     {
-      "id_produto": 1,
-      "nome_produto": "abacate",
-      "estoque": 10,
-      "preco": 2
+      "id": 3,
+      "nome_produto": "Banana",
+      "url_foto_produto": "https://i.pinimg.com/564x/dd/db/2c/dddb2c189dcaa741aa81222469a8eff7.jpg",
+      "estoque": 3,
+      "preco": 3
     },
     {
-      "id_produto": 2,
-      "nome_produto": "tomate",
+      "nome_produto": "Alface",
+      "url_foto_produto": "https://i.pinimg.com/564x/f1/8c/3e/f18c3ec1d4c6e69ebe64b76b6d3714a6.jpg",
+      "estoque": 3,
+      "preco": 10,
+      "id": 4
+    },
+    {
+      "nome_produto": "Carne",
+      "url_foto_produto": "https://i.pinimg.com/564x/38/2b/63/382b637d3194ccf57d50bd060625f13b.jpg",
       "estoque": 10,
-      "preco": 4
+      "preco": 20,
+      "id": 5
+    },
+    {
+      "nome_produto": "Carne",
+      "url_foto_produto": "https://i.pinimg.com/564x/38/2b/63/382b637d3194ccf57d50bd060625f13b.jpg",
+      "estoque": 1,
+      "preco": 20.00,
+      "id": 6
+    },
+    {
+      "nome_produto": "Banana-Prata",
+      "url_foto_produto": "https://i.pinimg.com/564x/38/2b/63/382b637d3194ccf57d50bd060625f13b.jpg",
+      "estoque": 2,
+      "preco": 20.00,
+      "id": 7
     }
   ]
 }

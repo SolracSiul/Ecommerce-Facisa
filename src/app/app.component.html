@@ -1,15 +1,10 @@
 <div class="conteiner-fluid">
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand nav-link" href="#" routerLink="/pessoas">
-      <i class="fa fa-user-edit"></i>
-    </a>
-    <div *ngIf="usuarioLogado"
-      class="navbar-collapse collapsed justify-content-between"
-      id="navbarContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="#" routerLink="/pessoas/listar">Pessoas</a>
-        </li>
+  <nav class="nav-login"> 
+    <div style="position: relative;">
+      <img src="../assets/imgs/logo.png" alt="" class="img-logo">
+    </div>
+     <div *ngIf="usuarioLogado" class="nav-logado">
+      <ul class="nav-1">
         <li *ngIf="usuarioLogado.perfil==='ADMIN'"
         class="nav-item">
             <a class="nav-link" href="#" routerLink="/usuarios">Usuarios </a>
@@ -19,14 +14,14 @@
             <a class="nav-link" href="#" routerLink="/produtos/listar">Cadastrar Produtos</a>
         </li>
       </ul>
-      <ul *ngIf="usuarioLogado" class="navbar-nav ml-auto">
+      <ul *ngIf="usuarioLogado" class="nav-2">
         <li class="nav-item">
-            <a class="nav-link" href="#" (click)="logout()">Logout</a>
+            <a class="nav-link" href="#" (click)="logout()">Sair</a>
         </li>
         <li class="nav-item">
-            <p class="navbar-text mb-0 text-white">
-            <i class="fa fa-user"></i> {{ usuarioLogado.nome }}
-        </p>
+            <p>
+            {{ usuarioLogado.nome }}
+            </p>
         </li>
       </ul>
     </div>

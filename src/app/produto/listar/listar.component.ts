@@ -38,7 +38,7 @@ export class ListarComponent implements OnInit{
     $event.preventDefault();
     if (confirm('Deseja realmente remover o usuário "' +
     produto.nome_produto + '"?')) {
-    this.produtoService.remover(produto.id_produto!).
+    this.produtoService.remover(produto.id!).
     subscribe({
     complete: () => { this.listarTodos(); }
     });

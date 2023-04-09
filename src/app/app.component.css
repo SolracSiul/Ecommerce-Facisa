@@ -1,0 +1,32 @@
+.nav-login{
+    background-image: linear-gradient(180deg, #B5FA7F -2.94%, #B5FA7F  113.04%);
+    height: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo{
+    padding-top: 170px;
+}
+.nav-logado{
+    display: flex;
+    width: 600px;
+}
+.nav-1, .nav-2{
+    display: flex;
+}
+.nav-1 li, .nav-2 li{
+    margin-right: 30px;
+}
+
+.nav-logado li{
+    list-style: none;
+    color: black;
+    padding-top: 10px;
+    
+}
+.nav-logado li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -31,7 +31,7 @@ export class LoginService {
     const adminSenha = 'admin123';
 
     if (login.login === adminLogin && login.senha === adminSenha) {
-      const admin = new Usuario(1, "Sorak-Admin", adminLogin, adminSenha, "ADMIN");
+      const admin = new Usuario(1, "Administrador", adminLogin, adminSenha, "ADMIN");
       this.usuarioLogado = admin;
       return of(admin);
     } else {

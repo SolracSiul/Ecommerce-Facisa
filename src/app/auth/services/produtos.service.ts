@@ -23,8 +23,8 @@ export class ProdutosService {
     this.httpOptions);
     }
 
-  buscarPorId(id_produto: number): Observable<Produto> {
-    return this.httpClient.get<Produto>(this.BASE_URL + id_produto,
+  buscarPorId(id: number): Observable<Produto> {
+    return this.httpClient.get<Produto>(this.BASE_URL + id,
     this.httpOptions);
     }
 
@@ -34,13 +34,13 @@ export class ProdutosService {
       this.httpOptions);
     }
 
-  remover(id_produto: number): Observable<Produto> {
-    return this.httpClient.delete<Produto>(this.BASE_URL + id_produto,
+  remover(id: number): Observable<Produto> {
+    return this.httpClient.delete<Produto>(this.BASE_URL + id,
     this.httpOptions);
     }
 
   alterar(produto: Produto): Observable<Produto> {
-    return this.httpClient.put<Produto>(this.BASE_URL + produto.id_produto,
+    return this.httpClient.put<Produto>(this.BASE_URL + produto.id,
     JSON.stringify(produto),
     this.httpOptions);
     }

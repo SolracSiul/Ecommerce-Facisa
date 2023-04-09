@@ -6,3 +6,6 @@
     box-sizing: border-box; 
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
+html, body{
+    height: 100%;
+}

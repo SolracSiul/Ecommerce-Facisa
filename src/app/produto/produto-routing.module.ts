@@ -19,6 +19,15 @@ export const ProdutoRoutes: Routes = [
         data:{
                 role: 'ADMIN'
         }
+        },
+        {
+        path: 'produtos/editar/:id',
+        component: InserirEditProdComponent,
+        canActivate: [AuthGuard],
+        data: {
+                role: 'ADMIN'
         }
+        }
+
 ]
         

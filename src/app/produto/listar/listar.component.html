@@ -1,8 +1,43 @@
-<p>Aqui a mágica irá ser listado os produtos</p>
-<div *ngIf="usuarioLogado">
-<div *ngIf="usuarioLogado.perfil==='ADMIN'">
-    <a [routerLink]="['/produtos/novo']" href="#"
-    title="Novo" alt="Novo"
-    class="btn btn-xs btn-success">Novo</a>
-</div>
+<div *ngIf="usuarioLogado" class="teste">
+<div class="title">
+    <h1>Produtos</h1>
+        <a *ngIf="usuarioLogado.perfil==='ADMIN'"[routerLink]="['/produtos/novo']" href="#"
+        title="Novo" alt="Novo">novo</a>
+</div>        
+        
+
+<div class="container">
+    <div class="card" *ngFor="let produto of produtos">
+      <div>
+        <img src={{produto.url_foto_produto}} alt="{{ produto.nome_produto }}">
+      </div>
+      <div class="card-infos">
+        <div>
+          <span>Nome:</span>
+          <span>{{ produto.nome_produto }}</span>
+        </div>
+        <div>
+          <span>Preço:</span>
+          <span>{{ produto.preco }}</span>
+        </div>
+        <div>
+          <span>Estoque:</span>
+          <span>{{ produto.estoque }}</span>
+        </div>
+        <div>
+          <button>Adicionar ao carrinho</button>
+        </div>
+        <div *ngIf="usuarioLogado.perfil === 'ADMIN'">
+            <a [routerLink]="['produtos/editar', produto.id]"
+            href="#" title="Editar" alt="Editar"> Editar
+            </a>
+            <a href="#" title="Remover" alt="Remover"
+            (click)="remover($event, produto)">
+            Remover
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<p *ngIf="produtos.length==0">Nenhum usuário cadastrado.</p>
 </div>
