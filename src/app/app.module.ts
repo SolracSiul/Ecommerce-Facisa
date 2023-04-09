@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PessoaModule } from './pessoa/pessoa.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { AuthModule } from './auth/auth.module';
@@ -26,7 +25,6 @@ import { ProdutoModule } from './produto/produto.module';
     NgbModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    PessoaModule,
     NgbModule,
     AuthModule,
     HttpClientModule,
