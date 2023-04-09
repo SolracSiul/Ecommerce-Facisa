@@ -22,3 +22,17 @@
 .btns-lgn-page > a:last-child{
     width: 130px;
 }
+.formLogin{
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxForm{
+    background-color: white;
+    opacity: 0.9;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 5px;
+}

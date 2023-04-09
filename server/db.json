@@ -20,21 +20,27 @@
       "senha": "abacateSenha",
       "perfil": "FUNC",
       "id": 3
+    },
+    {
+      "nome": "hiandra",
+      "login": "hiandra",
+      "senha": "hiandra123",
+      "perfil": "FUNC",
+      "id": 4
     }
   ],
-
-  "produtos":[
+  "produtos": [
     {
-      "id_produto" : 1,
-      "nome_produto" : "abacate",
-      "estoque" : 10,
-      "preco": 2.00
+      "id_produto": 1,
+      "nome_produto": "abacate",
+      "estoque": 10,
+      "preco": 2
     },
     {
       "id_produto": 2,
       "nome_produto": "tomate",
-      "estoque" : 10,
-      "preco": 4.00
+      "estoque": 10,
+      "preco": 4
     }
-]
+  ]
 }
