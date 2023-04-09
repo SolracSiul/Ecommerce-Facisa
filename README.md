@@ -14,7 +14,9 @@
 - Cadastro de produtos;
 - Cadastro de clientes;
 
-## **Em desenvolvimento**- Serviço de carrinho;
+## **Em desenvolvimento**
+- Serviço de carrinho;
+- Migração do back para aplicação java;
 
 
 ## **Execução do projeto**
