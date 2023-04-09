@@ -32,7 +32,7 @@ logar(): void {
   if (usu != null) {
   this.loginService.usuarioLogado = usu;
   this.loading = false;
-  this.router.navigate( ["/pessoas/listar"] );
+  this.router.navigate( ["/produtos/listar"] );
   }
   else {
   this.message = "Usuário/Senha inválidos.";

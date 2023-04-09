@@ -51,8 +51,9 @@ const routes: Routes = [
     data:{
       role: 'ADMIN'
     }
-    
-  },
+  }
+    ,
+
   {
     path:'forget/password',
     component: ForgetComponent
