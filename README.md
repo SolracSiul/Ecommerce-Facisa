@@ -4,7 +4,7 @@
 ## **Tecnologias**
 - Angular
 - Bootstrap
--Typescript, Html, CSS
+- Typescript, Html, CSS
 
 ## **Objetivos**
 - Construir eccommerce;
